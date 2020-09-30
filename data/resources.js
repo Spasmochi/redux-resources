@@ -1,4 +1,4 @@
-const resources = [
+export const resources = [
   {
     url: "https://scrimba.com/",
     description:
@@ -70,5 +70,3 @@ const resources = [
     preview_img: "cs50.jpg",
   },
 ];
-
-export default resources;

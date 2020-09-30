@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { Layout, ResourceGrid } from "../components";
-
+import { Provider } from "react-redux";
+import { store } from "../store";
 const Home = () => {
   return (
-    <>
+    <Provider store={store}>
       <Head>
         <title>Learn Web Dev: Resources</title>
         <meta
@@ -14,7 +15,7 @@ const Home = () => {
       <Layout>
         <ResourceGrid />
       </Layout>
-    </>
+    </Provider>
   );
 };
 

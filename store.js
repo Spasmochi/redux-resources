@@ -7,7 +7,7 @@ const defaultState = {
   comments: comments,
 };
 
-const store = configureStore({ rootReducer, defaultState });
+export const store = configureStore({ reducer: rootReducer, defaultState });
 
 //Todo Add in browser history with alternate next router implementation
 // const history = syncHistoryWithStore(browserHistory, store);
