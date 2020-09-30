@@ -1,4 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { rootReduce } from "./reducers/index";
+import { rootReducer } from "./reducers/index";
+import { resources, comments } from "./data";
 
-const store = configureStore({});
+const defaultState = {
+  resources: resources,
+  comments: comments,
+};
+
+const store = configureStore({ rootReducer, defaultState });
+
+//Todo Add in browser history with alternate next router implementation
+// const history = syncHistoryWithStore(browserHistory, store);

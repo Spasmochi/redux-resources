@@ -70,3 +70,5 @@ const resources = [
     preview_img: "cs50.jpg",
   },
 ];
+
+export default resources;
